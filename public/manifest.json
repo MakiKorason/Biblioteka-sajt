@@ -1,0 +1,20 @@
+{
+    "short_name": "Градска библиотека Рума",
+    "name": "Градска библиотека Рума – књиге, догађаји, дигитална библиотека",
+    "description": "Званична веб страница Градске библиотеке Рума",
+    "icons": [
+      {
+        "src": "/logo.jpg",
+        "sizes": "192x192",
+        "type": "image/jpeg"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#f3f2ee",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "scope": "/",
+    "lang": "sr"
+  }
+  

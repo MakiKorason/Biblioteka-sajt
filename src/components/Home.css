@@ -1,0 +1,334 @@
+.carousel-control-prev,
+.carousel-control-next {
+ display: none;
+ color: black;
+   
+}
+.carousel-indicators {
+ z-index: 10;
+}
+
+.carousel-caption{
+animation: flashEffect 10s forwards;
+font-size: 1.5rem;
+}
+.carousel-caption-text {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+  font-size: 1.35em;
+  letter-spacing: 0.5px;
+}
+.image-carousel {
+ max-width: 100%; 
+max-height: auto;
+ opacity: 0;
+ animation: flashEffect 10s forwards; 
+ object-fit: cover;
+ height: 215vh;
+}
+
+/* Ensure carousel works on all screen sizes */
+.carousel {
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .image-carousel {
+    height: 350px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  /* Optimizacija za karusel u oglasnoj tabli na telefonima */
+  .container-image {
+    max-width: 280px !important;
+    width: 100% !important;
+  }
+  
+  /* Smanjivanje gap-a na telefonima */
+  .carousel-container {
+    gap: 10px !important;
+  }
+  
+  .carousel-images {
+    gap: 15px !important;
+  }
+  
+  /* Smanjivanje grba za digitalni fond na mobilnim uređajima */
+  .digital-logo {
+    width: 25% !important;
+  }
+  
+  /* Smanjivanje loga za književni konkurs na mobilnim uređajima */
+  .konkurs-logo {
+    width: 35% !important;
+  }
+}
+
+
+@keyframes flashEffect {
+ 0% {
+   opacity: 0;
+   transform: scale(0.9); 
+ }
+ 50% {
+   opacity: 1;
+   transform: scale(1); 
+ }
+ 100% {
+   opacity: 1;
+   transform: scale(1);
+ }
+}
+
+.container-button{
+   color: black;
+   font-size: 50%;
+   padding: 0.6rem 0.7rem;
+   background-color: #f3f2ee;
+   border-radius: 50%;
+   font-family: 'Arial';
+   margin: 0 auto;
+   display: block;
+   width: fit-content;
+}
+
+/* Kritični stilovi koji se učitavaju odmah */
+.container-library {
+ width: 95%;
+ max-width: 95%;
+ padding: 2.5rem;
+ background-color: #f3f2ee;
+ border-radius: 8px;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+ border: 1px solid #3f2c11;
+ position: relative;
+ margin: 0 auto;
+}
+
+.container-title {
+ font-size: 3rem;
+ font-weight: bold;
+ text-align: center;
+ margin-bottom: 10px;
+ color:#3f2c11;
+ font-family:'Arsenal';
+ animation: fadeInText 3s forwards;
+ animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@media (max-width: 768px) {
+ .container-title {
+   font-size: 1.3rem;
+   line-height: 1.4;
+   padding: 0 15px;
+ }
+}
+
+/* Nekritični stilovi koji se mogu učitati kasnije */
+
+/* Optimizacija animacija */
+.container-image {
+  transition: transform 0.3s ease;
+  will-change: transform;
+ }
+
+/* Optimizacija za print */
+@media print {
+  .container-button,
+  .carousel-indicators {
+    display: none !important;
+  }
+}
+
+/* Optimizacija za dark mode */
+@media (prefers-color-scheme: dark) {
+  .container-library {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+}
+
+.container-day{
+max-width: 95%;
+padding: 3%;
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+
+}
+.container-icon {
+ color: #3f2c11; 
+ font-size:3rem; 
+ text-align: center;
+}
+
+.container-icon.left-align {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+.container-text {
+ color: #3f2c11;
+ font-size: 25px;
+ margin-bottom: 30px;
+ text-align: left;
+ opacity: 0; 
+ animation: fadeInText 3s forwards;
+ animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+ word-spacing: -1.8px; 
+ font-family: 'Arial';
+}
+@media (max-width: 768px) {
+ .container-text {
+   font-size: 0.9rem;
+   line-height: 1.4;
+   padding: 0 15px;
+ }
+}
+@keyframes fadeInText {
+ 0% {
+   opacity: 0; 
+   color: white; 
+ }
+ 100% {
+   opacity: 1; 
+   color:#66452c;
+  
+   
+ }
+}
+ 
+.image-event {
+  max-width: 100%; 
+  border-radius: 5%;
+  transition: transform 0.3s ease;
+}
+
+.image-event:hover {
+ transform: scale(1.2); 
+}
+
+.container-iframe {
+ position: relative;
+ width: 100%;
+ padding-bottom: 56.25%; 
+ height: 0;
+ overflow: hidden;
+}
+
+.container-iframe iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+
+.image-background {
+ background-image:url('../images/biblioteka.webp');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ padding: 5% 0; 
+ color: white; 
+ position:relative;
+ height: 60%;
+}
+
+.image-background::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: rgba(255, 255, 255, 0.7); 
+}
+
+.react-calendar {
+ background-color: #f4f4f4;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+ position: relative;
+  font-size: 1.3rem;
+  width: 100%;
+  max-width: 420px;
+  margin-left: 2rem;
+}
+
+
+.react-calendar__tile {
+border-radius: 50%; 
+transition: background-color 0.2s ease; 
+}
+
+.react-calendar__tile.marked-date {
+background-color:green; 
+color: white; 
+font-weight: bold;
+}
+
+.react-calendar__navigation__label {
+font-size: 1.2rem;
+font-weight: bold;
+color: #333;
+}
+
+/* Custom stil za vertikalni meni preporuka */
+.nav-pills .nav-link {
+  background-color: #f3f2ee;
+  color: #3f2c11;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  border: 1px solid #b5a999;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #f3e9d2;
+  color: #3f2c11;
+  border: 2px solid #b5a999;
+}
+
+/* Veće slike u oglasnoj tabli */
+.container-library .image-event {
+  width: 100%;
+  height: 480px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Smanjen razmak između kalendara i slike u oglasnoj tabli */
+.container-library .row > .col-md-4:first-child {
+  padding-right: 0.3rem;
+}
+.container-library .row > .col-md-4:nth-child(2) {
+  padding-left: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .react-calendar {
+    padding: 6px;
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+

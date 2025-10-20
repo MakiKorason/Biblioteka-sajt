@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://www.bibliotekaruma.rs/sitemap.xml
+
+# Cache control for images
+User-agent: Googlebot-Image
+Allow: /src/images/
+Allow: /images/
+Allow: /*.webp
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
