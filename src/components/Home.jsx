@@ -657,31 +657,6 @@ const Home =()=> {
        </Col></Row>
        </Container>
 
-   
-<Container className='container-library ms-auto mt-4 mb-4'>
- <Row>
-    <Col md={12}>
-      <h2 className='container-title text-center'>СВЕЧАНО ОТВАРАЊЕ 15. МАНИФЕСТАЦИЈЕ<br/>„Дани словенске писмености и културе“</h2>
-      <hr/>
-      </Col>  
-  </Row>
-  <Row>
-    <Col md={4}>
-      <AnimatedImage className='container-image' src={dani1}/>
-      <p>„Вивкови виолинисти“, квартет виолина.</p>
-        </Col>
-    <Col md={4}>
-      <AnimatedImage className='container-image' src={dani2}/>
-      <p>Архијерејски намесник румски протојереј Сретен Лазаревић.</p>
-      <AnimatedImage className='container-image' src={dani4}/>
-</Col>         
-    <Col md={4}>
-      <AnimatedImage className='container-image' src={dani3}/>
-      <p>Изложба икона и калиграфских радова ученика 5 основних школа и ССШ "Бранко Радичевић".</p>
-         </Col>
-        </Row>         
-        </Container>
-
         <br/><hr/>
    <AnimatedCard>
       <Container className='container-library ms-auto mt-4 mb-4' >
