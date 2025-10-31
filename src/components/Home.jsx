@@ -28,15 +28,13 @@ import pokrajina from '../images/pokrajina.webp';
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-
-import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
 import konkursAtanasije from '../images/konkursAtanasije.webp';
-import romana from '../images/романа.webp';
-import promocija from '../images/ПРОМОЦИЈА.webp';
+
+
 import sanjalica from '../images/sanjalica.webp';
 import todor from '../images/todor.webp';
-
+import mirko from '../images/mirko.webp';
 import milan from '../images/milan.webp';
  
  
@@ -48,13 +46,11 @@ const AnimatedImage = React.lazy(() => import('./Department/AnimatedImage'));
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
   const markedDates = useMemo(() => [
-    new Date(new Date().getFullYear(), 6, 22), // 22. jul
-    new Date(new Date().getFullYear(), 6, 24), // 24. jul
-    new Date(new Date().getFullYear(), 6, 29), // 29. jul
-    new Date(new Date().getFullYear(), 6, 30), // 30. jul
+    
     new Date(new Date().getFullYear(), 7, 22), // 22. avgust
     new Date(new Date().getFullYear(), 7, 25), // 25. avgust
     new Date(new Date().getFullYear(), 9, 29), // 29. oktobar
+    new Date(new Date().getFullYear(), 9, 15), // 15. oktobar
   ], []);
 
   const [showFriends, setShowFriends] = useState(false);
@@ -105,30 +101,8 @@ const Home =()=> {
       date.getMonth() === 6 && // jul je 6 (0-indeksiran)
       date.getFullYear() === new Date().getFullYear()
     ) {
-      setModalImage(romana);
-      setShowImage(true);
-    } else if (
-      date instanceof Date &&
-      date.getDate() === 29 &&
-      date.getMonth() === 6 &&
-      date.getFullYear() === new Date().getFullYear()
-    ) {
-      setModalImage(promocija);
-      setShowImage(true);
-    } else if (
-      date instanceof Date &&
-      date.getDate() === 24 &&
-      date.getMonth() === 6 &&
-      date.getFullYear() === new Date().getFullYear()
-    ) {
-      setModalImage(predavanjeVizeti);
-      setShowImage(true);
-    } else if (
-      date instanceof Date &&
-      date.getDate() === 22 &&
-      date.getMonth() === 6 &&
-      date.getFullYear() === new Date().getFullYear()
-    ) {
+ 
+    
       setModalImage(poetskoVece);
       setShowImage(true);
     } else if (
@@ -157,11 +131,11 @@ const Home =()=> {
       setShowImage(true);
        } else if (
       date instanceof Date &&
-      date.getDate() === 25 &&
-      date.getMonth() === 7 &&
+      date.getDate() === 15 &&
+      date.getMonth() === 9 &&
       date.getFullYear() === new Date().getFullYear()
     ) {
-      setModalImage(sanjalica);
+      setModalImage(mirko);
       setShowImage(true);
     } else {
       setShowImage(false);
@@ -169,10 +143,9 @@ const Home =()=> {
   }, []);
 
   const imageSets = useMemo(() => [
-    [milan, sanjalica],
-    [todor, romana],
-    [promocija, predavanjeVizeti],
-    [poetskoVece, books]
+    [milan, mirko],
+    [sanjalica, todor]
+   
   ], []);
   
   const toggleImageSet = () => {
