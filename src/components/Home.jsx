@@ -598,7 +598,7 @@ const Home =()=> {
          <Col md={4} className='mt-4'>     
          <AnimatedCard>
         <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
-        <h6 className='container-title'>Претражите<br/> наш фонд  </h6> </a><img 
+        <p className='container-title'>Претражите<br/> наш фонд  </p> </a><img 
       src={cobbis}
       alt="COBISS" 
       className='container-image'
@@ -611,8 +611,8 @@ const Home =()=> {
      </Col>
            <Col md={4} className='mt-4'>
                <AnimatedCard>
-                <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <h6 className='container-title'>  
-               Наш дигитални<br/> фонд </h6></a>
+                <a href="https://www.digitalna.bibliotekaruma.rs/" target='_blank' rel="noopener noreferrer">  <p className='container-title'>  
+               Наш дигитални<br/> фонд </p></a>
                 <br/><img 
       src="/logo.jpg"
        alt="Грб Градске библиотеке Рума" 
@@ -626,9 +626,9 @@ const Home =()=> {
                    <Col  md={4}  className='mt-4'>
                   <AnimatedCard>
              <a href="https://www.facebook.com/photo/?fbid=1326535312805422&set=a.512519967540298" target="_blank" rel="noopener noreferrer" className="konkurs-link">
-               <h6 className="container-title mb-0">
+               <p className="container-title mb-0">
                  Књижевни <br/>конкурс
-               </h6>
+               </p>
              </a>
              <img 
        src={konkurs}
