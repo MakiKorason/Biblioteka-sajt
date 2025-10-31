@@ -24,7 +24,7 @@ const DigitalLibrary =()=>{
        <Helmet>
   <title>Дигитална библиотека - Библиотека Рума</title>
   <meta name="description" content="Прегледајте дигиталну библиотеку Градске библиотеке 'Атанасије Стојковић' у Руми. Бесплатан приступ дигитализованим књигама, снимцима и публикацијама." />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/дигитална-библиотека" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/digitalna-biblioteka" />
   
 
   <script type="application/ld+json">
@@ -33,7 +33,7 @@ const DigitalLibrary =()=>{
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Дигитална библиотека - Библиотека Рума",
-        "url": "https://www.bibliotekaruma.rs/дигитална-библиотека",
+        "url": "https://www.bibliotekaruma.rs/digitalna-biblioteka",
         "description": "Прегледајте дигиталну библиотеку Градске библиотеке 'Атанасије Стојковић' у Руми. Бесплатан приступ дигитализованим књигама, снимцима и публикацијама.",
         "inLanguage": "sr-Cyrl",
         "publisher": {

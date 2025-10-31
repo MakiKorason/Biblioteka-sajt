@@ -18,7 +18,7 @@ const Legati= ()=>{
     name="description"
     content="Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/легати-библиотеке" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/legati-biblioteke" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Легати – Библиотека Рума" />
@@ -26,7 +26,7 @@ const Legati= ()=>{
     property="og:description"
     content="Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума."
   />
-  <meta property="og:url" content="https://www.bibliotekaruma.rs/легати-библиотеке" />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/legati-biblioteke" />
   <meta property="og:type" content="website" />
 
   <script type="application/ld+json">
@@ -36,7 +36,7 @@ const Legati= ()=>{
       "@type": "WebPage",
       "name": "Легати – Библиотека Рума",
       "description": "Колекција легата Николе Дреновца, Милутина Стојковића и Оливере Шијачки у Градској библиотеци Рума.",
-      "url": "https://www.bibliotekaruma.rs/легати-библиотеке",
+      "url": "https://www.bibliotekaruma.rs/legati-biblioteke",
       "inLanguage": "sr",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -57,7 +57,7 @@ const Legati= ()=>{
             "@type": "ListItem",
             "position": 3,
             "name": "Легати",
-            "item": "https://www.bibliotekaruma.rs/легати-библиотеке"
+            "item": "https://www.bibliotekaruma.rs/legati-biblioteke"
           }
         ]
       },

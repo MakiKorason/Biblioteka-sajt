@@ -15,14 +15,14 @@ const History = () => {
     name="description"
     content="Историјат Градске библиотеке „Атанасије Стојковић“ у Руми, њена зграда и значај у локалној заједници."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/историјат-библиотеке" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/istorijat-biblioteke" />
   <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/историјат-библиотеке" />
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "Library",
       "name": "Градска библиотека „Атанасије Стојковић "Рума",
-      "url": "https://www.bibliotekaruma.rs/историјат-библиотеке",
+      "url": "https://www.bibliotekaruma.rs/istorijat-biblioteke",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Главна 114",
@@ -87,7 +87,7 @@ COBISS/OPAC окружење и све услуге корисницима
 Дома војске.</p></Col>  <hr/>
 <AnimatedCard className='container-iframe'>
 <iframe
-     src="https://www.youtube.com/embed/ec6NLWV8qaM"
+     src="https://www.youtube-nocookie.com/embed/ec6NLWV8qaM"
         title="Example Website"
       ></iframe> </AnimatedCard>
            

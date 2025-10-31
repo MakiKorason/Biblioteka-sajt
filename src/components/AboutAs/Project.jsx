@@ -12,13 +12,13 @@ const Project =()=>{
 <Helmet>
   <title>Пројекти библиотеке – Библиотека Рума</title>
   <meta name="description" content="Пројекти библиотеке у Руми за приступачност и унапређење културе." />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/пројекти-библиотеке" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/projekti-biblioteke" />
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "Library",
       "name": "Градска библиотека „Атанасије Стојковић "Рума",
-      "url": "https://www.bibliotekaruma.rs/пројекти-библиотеке",
+      "url": "https://www.bibliotekaruma.rs/projekti-biblioteke",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Главна 114",

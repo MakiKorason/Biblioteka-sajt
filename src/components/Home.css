@@ -272,6 +272,33 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
   margin-left: 2rem;
 }
 
+/* Povećanje kontrasta teksta u kalendaru (WCAG AA) */
+.react-calendar abbr {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  color: #2b2b2b;
+  font-weight: 700;
+}
+
+.react-calendar__navigation button {
+  color: #2b2b2b;
+}
+
+.react-calendar__tile {
+  color: #2b2b2b;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #5a5a5a;
+}
+
+.react-calendar__tile--now {
+  background: #e9e3da;
+}
+
 
 .react-calendar__tile {
 border-radius: 50%; 

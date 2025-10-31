@@ -39,7 +39,7 @@ const Contact = () => {
           name="description" 
           content="Контактирајте Градску библиотеку Рума – сазнајте радно време, адресу и како да нас посетите или нам пошаљете поруку!" 
         />
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/контакт-библиотека-рума" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/kontakt-biblioteka-ruma" />
     
         <script type="application/ld+json">
           {JSON.stringify({

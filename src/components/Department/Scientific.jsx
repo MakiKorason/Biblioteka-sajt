@@ -15,7 +15,7 @@ const Scientific =()=>{
           name="description"
           content="Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области."
         />
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/odeljenje-naucne-i-strucne-literature" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Одељење научне и стручне литературе – Библиотека Рума" />
@@ -23,7 +23,7 @@ const Scientific =()=>{
           property="og:description"
           content="Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области."
         />
-        <meta property="og:url" content="https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе" />
+        <meta property="og:url" content="https://www.bibliotekaruma.rs/odeljenje-naucne-i-strucne-literature" />
         <meta property="og:type" content="website" />
 
         <script type="application/ld+json">
@@ -33,7 +33,7 @@ const Scientific =()=>{
             "@type": "WebPage",
             "name": "Одељење научне и стручне литературе – Библиотека Рума",
             "description": "Фонд Одељења научне и стручне литературе Градске библиотеке Рума броји преко 22.000 публикација из разних научних области.",
-            "url": "https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе",
+            "url": "https://www.bibliotekaruma.rs/odeljenje-naucne-i-strucne-literature",
             "inLanguage": "sr",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -54,7 +54,7 @@ const Scientific =()=>{
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Научна и стручна литература",
-                  "item": "https://www.bibliotekaruma.rs/одељење-научне-и-стручне-литературе"
+                  "item": "https://www.bibliotekaruma.rs/odeljenje-naucne-i-strucne-literature"
                 }
               ]
             },

@@ -648,7 +648,7 @@ const Home =()=> {
             <iframe 
   width="560" 
   height="315" 
-  src="https://www.youtube.com/embed/0Ay8XmhQHSI" 
+  src="https://www.youtube-nocookie.com/embed/0Ay8XmhQHSI" 
   title="Филм: Година иза нас" 
   frameBorder="0" 
   allowFullScreen>

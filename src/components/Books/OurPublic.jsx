@@ -46,13 +46,13 @@ const OurPublic =()=>{
 <Helmet>
   <title>Наша издања – Библиотека Рума</title>
   <meta name="description" content="Издања Градске библиотеке 'Атанасије Стојковић' у Руми. Погледајте наслове из области прозе, поезије, дечије и научне литературе." />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/наша-издања" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/nasa-izdanja" />
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Наша издања – Библиотека Рума",
-      "url": "https://www.bibliotekaruma.rs/наша-издања",
+      "url": "https://www.bibliotekaruma.rs/nasa-izdanja",
       "description": "Издања Градске библиотеке 'Атанасије Стојковић' у Руми. Погледајте наслове из области прозе, поезије, дечије и научне литературе.",
       "publisher": {
         "@type": "Organization",

@@ -13,7 +13,7 @@ const Kid =()=>{
     name="description"
     content="Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/одељење-за-децу" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/odeljenje-za-decu" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Одељење за децу – Библиотека Рума" />
@@ -21,7 +21,7 @@ const Kid =()=>{
     property="og:description"
     content="Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје."
   />
-  <meta property="og:url" content="https://www.bibliotekaruma.rs/одељење-за-децу" />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/odeljenje-za-decu" />
   <meta property="og:type" content="website" />
 
   <script type="application/ld+json">
@@ -31,7 +31,7 @@ const Kid =()=>{
       "@type": "WebPage",
       "name": "Одељење за децу – Библиотека Рума",
       "description": "Одељење за децу Градске библиотеке Рума броји око 18.000 публикација и организује радионице, литерарне конкурсе и културне догађаје.",
-      "url": "https://www.bibliotekaruma.rs/одељење-за-децу",
+      "url": "https://www.bibliotekaruma.rs/odeljenje-za-decu",
       "inLanguage": "sr",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -52,7 +52,7 @@ const Kid =()=>{
             "@type": "ListItem",
             "position": 3,
             "name": "Одељење за децу",
-            "item": "https://www.bibliotekaruma.rs/одељење-за-децу"
+            "item": "https://www.bibliotekaruma.rs/odeljenje-za-decu"
           }
         ]
       },

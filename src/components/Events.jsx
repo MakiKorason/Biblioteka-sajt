@@ -63,10 +63,10 @@ const Events = () => {
     name="description"
     content="Сазнајте све о манифестацијама које организује Градска библиотека у Руми: Дани словенске писмености и културе, Дани Атанасија Стојковића, Румска књижевна колонија и Румско културно лето."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/манифестације-библиотека-рума" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma" />
   <meta property="og:title" content="Манифестације – Градска библиотека Рума" />
   <meta property="og:description" content="Пратите најновије културне догађаје и манифестације у Градској библиотеци Рума." />
-  <meta property="og:url" content="https://www.bibliotekaruma.rs/манифестације-библиотека-рума" />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma" />
   <meta property="og:type" content="website" />
   <script type="application/ld+json">
     {`
@@ -92,8 +92,8 @@ const Events = () => {
           },
           {
             "@type": "WebPage",
-            "@id": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума#webpage",
-            "url": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума",
+            "@id": "https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma#webpage",
+            "url": "https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma",
             "name": "Манифестације – Библиотека Рума",
             "isPartOf": {
               "@id": "https://www.bibliotekaruma.rs/#website"
@@ -104,7 +104,7 @@ const Events = () => {
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума#breadcrumb",
+            "@id": "https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -116,7 +116,7 @@ const Events = () => {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Манифестације",
-                "item": "https://www.bibliotekaruma.rs/манифестације-библиотека-рума"
+                "item": "https://www.bibliotekaruma.rs/manifestacije-biblioteka-ruma"
               }
             ]
           }
@@ -264,7 +264,7 @@ const Events = () => {
 <AnimatedCard>
 <div className='container-iframe'>
 <iframe
-src="https://www.youtube.com/embed/2bseDBcsU2U?start=964"
+src="https://www.youtube-nocookie.com/embed/2bseDBcsU2U?start=964"
 title='Свечано отварање Дана словенске писмености и културе'
 
 ></iframe></div></AnimatedCard>
@@ -353,7 +353,7 @@ title='Свечано отварање Дана словенске писмен�
   <hr/>
 Након потписивања протокола, у просторијама Градске библиотеке одржан је и 
 округли сто „Стваралачки портрет Атанасија Стојковића“, на којем су учествовали професори: Радослав Ераковић, Исидора Бјелаковић и Срђан Орсић.
-<br/> Предавање можете погледати на овом линку: <a href='https://www.youtube.com/embed/pnPgdfMg38w?start=747' alt='ДАНИ МАТИЦЕ СРПСКЕ- Омаж Атанасију Стојковићу' target='_blank' rel="noreferrer" >Дани Матице српске - Омаж Атанасију Стојковићу</a></p>
+<br/> Предавање можете погледати на овом линку: <a href='https://www.youtube-nocookie.com/embed/pnPgdfMg38w?start=747' alt='ДАНИ МАТИЦЕ СРПСКЕ- Омаж Атанасију Стојковићу' target='_blank' rel="noreferrer" >Дани Матице српске - Омаж Атанасију Стојковићу</a></p>
 
 </Col>
      </Row>
@@ -367,7 +367,7 @@ title='Свечано отварање Дана словенске писмен�
 <br/>
 </p><div className='container-iframe'>
             <iframe 
-    src="https://www.youtube.com/embed/w4RtolhtK7M?start=46" 
+   src="https://www.youtube-nocookie.com/embed/w4RtolhtK7M?start=46" 
     title="Филм о Атанасију Стојковићу" 
     >    
 </iframe></div> </AnimatedCard> 

@@ -19,13 +19,13 @@ const Employees = () => {
     name="description"
     content="Сазнајте више о стручном тиму Градске библиотеке „Атанасије Стојковић“ у Руми и одељењима у којима раде."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/запослени-библиотеке" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/zaposleni-biblioteke" />
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "Library",
       "name": "Градска библиотека „Атанасије Стојковић" Рума",
-      "url": "https://www.bibliotekaruma.rs/запослени-библиотеке",
+      "url": "https://www.bibliotekaruma.rs/zaposleni-biblioteke",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Главна 114",

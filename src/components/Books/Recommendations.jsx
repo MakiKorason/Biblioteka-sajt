@@ -157,14 +157,14 @@ const Recommendations =()=>{
             <><Helmet>
   <title>Препоруке библиотекара - Библиотека Рума</title>
   <meta name="description" content="Издвојене препоруке библиотекара Градске библиотеке 'Атанасије Стојковић' у Руми. Препоручујемо најзанимљивија и најчитанија дела за све узрасте." />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/препоруке-библиотекара" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/preporuke-bibliotekara" />
   <script type="application/ld+json">
     {`
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Препоруке библиотекара - Библиотека Рума",
-      "url": "https://www.bibliotekaruma.rs/препоруке-библиотекара",
+      "url": "https://www.bibliotekaruma.rs/preporuke-bibliotekara",
       "description": "Издвојене препоруке библиотекара Градске библиотеке 'Атанасије Стојковић' у Руми. Препоручујемо најзанимљивија и најчитанија дела за све узрасте.",
       "publisher": {
         "@type": "Organization",
@@ -267,7 +267,7 @@ const Recommendations =()=>{
                       {/* <h3 className="container-title">Препоручујемо вам! 📚</h3>
                       <div className="iframe-container">
                         <iframe 
-                          src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
                           width="100%" 
                           height="400" 
                           frameBorder="0" 

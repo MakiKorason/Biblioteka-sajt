@@ -13,7 +13,7 @@ return (<>
     name="description"
     content="Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/завичајна-збирка" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/zavicajna-zbirka" />
 
   {/* Open Graph */}
   <meta property="og:title" content="Завичајно одељење – Библиотека Рума" />
@@ -21,7 +21,7 @@ return (<>
     property="og:description"
     content="Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу."
   />
-  <meta property="og:url" content="https://www.bibliotekaruma.rs/завичајна-збирка" />
+  <meta property="og:url" content="https://www.bibliotekaruma.rs/zavicajna-zbirka" />
   <meta property="og:type" content="website" />
 
   <script type="application/ld+json">
@@ -31,7 +31,7 @@ return (<>
       "@type": "WebPage",
       "name": "Завичајно одељење – Библиотека Рума",
       "description": "Завичајна збирка Градске библиотеке Рума броји преко 3.000 библиотечких јединица, укључујући монографије, периодику и некњижну грађу.",
-      "url": "https://www.bibliotekaruma.rs/завичајна-збирка",
+      "url": "https://www.bibliotekaruma.rs/zavicajna-zbirka",
       "inLanguage": "sr",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -46,7 +46,7 @@ return (<>
             "@type": "ListItem",
             "position": 2,
             "name": "Завичајна збирка",
-            "item": "https://www.bibliotekaruma.rs/завичајна-збирка"
+            "item": "https://www.bibliotekaruma.rs/zavicajna-zbirka"
           }
         ]
       },

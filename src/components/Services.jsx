@@ -16,15 +16,15 @@ const Services =()=>{
     name="description"
     content="Погледајте све услуге које нуди Градска библиотека Рума: читаоница, издавање књига, дигитална библиотека и још много тога!"
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/услуге-библиотека-рума" />
-  <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/услуге-библиотека-рума" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/usluge-biblioteka-ruma" />
+  <link rel="alternate" hreflang="sr" href="https://www.bibliotekaruma.rs/usluge-biblioteka-ruma" />
   
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Library",
       "name": "Градска библиотека „Атанасије Стојковић\" Рума",
-      "url": "https://www.bibliotekaruma.rs/услуге-библиотека-рума",
+      "url": "https://www.bibliotekaruma.rs/usluge-biblioteka-ruma",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Главна 114",

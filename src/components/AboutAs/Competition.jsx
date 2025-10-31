@@ -13,13 +13,13 @@ const Competition =()=>{
     name="description"
     content="Конкурс за први необјављени роман на српском језику отворен од 21. јула до 15. новембра 2025."
   />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/конкурс-библиотеке" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/konkurs-biblioteke" />
   <script type="application/ld+json">{`
     {
       "@context": "https://schema.org",
       "@type": "Library",
       "name": "Градска библиотека „Атанасије Стојковић "Рума",
-      "url": "https://www.bibliotekaruma.rs/конкурс-библиотеке",
+      "url": "https://www.bibliotekaruma.rs/konkurs-biblioteke",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Главна 114",

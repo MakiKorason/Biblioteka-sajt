@@ -32,13 +32,13 @@ const MisionAndVision = () => {
           name="description"
           content="Визија и мисија Градске библиотеке 'Атанасије Стојковић' у Руми – инклузија, учење и културни развој."
         />
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/визија-мисија-библиотеке" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/vizija-misija-biblioteke" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Library",
             "name": "Градска библиотека „Атанасије Стојковић\" Рума",
-            "url": "https://www.bibliotekaruma.rs/визија-мисија-библиотеке",
+            "url": "https://www.bibliotekaruma.rs/vizija-misija-biblioteke",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Главна 114",

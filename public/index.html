@@ -13,9 +13,7 @@
    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <!-- Preload kritičnih resursa -->
-    <link rel="preload" href="/static/css/main.chunk.css" as="style">
-    <link rel="preload" href="/static/js/main.chunk.js" as="script">
+    <!-- Napomena: ne prelodujemo bundlove sa fiksnim imenima jer se hashiraju u buildu -->
     
     <!-- Async CSS učitavanje -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -44,12 +42,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Градска библиотека Рума">
     
     <!-- Resource hints for faster loading -->
     <link rel="preload" href="/logo.jpg" as="image" type="image/jpeg">
-    <link rel="preload" href="/manifest.json" as="fetch" crossorigin="anonymous">
+    
  
   </head>
   <body>

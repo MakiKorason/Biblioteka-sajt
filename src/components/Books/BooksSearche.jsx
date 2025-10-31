@@ -27,7 +27,7 @@ const BooksSearche = () => {
       <Helmet>
   <title>Претраживање фонда – Библиотека Рума</title>
   <meta name="description" content="Претражите библиотечки фонд преко COBISS+ и MCOBISS апликације. Прегледајте књиге, ауторе и доступност у Градској библиотеци 'Атанасије Стојковић' Рума." />
-  <link rel="canonical" href="https://www.bibliotekaruma.rs/претраживање-фонда" />
+  <link rel="canonical" href="https://www.bibliotekaruma.rs/pretrazivanje-fonda" />
   
   <script type="application/ld+json">
     {`
@@ -35,7 +35,7 @@ const BooksSearche = () => {
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Претраживање фонда – Библиотека Рума",
-        "url": "https://www.bibliotekaruma.rs/претраживање-фонда",
+        "url": "https://www.bibliotekaruma.rs/pretrazivanje-fonda",
         "description": "Претражите библиотечки фонд преко COBISS+ и MCOBISS апликације. Прегледајте књиге, ауторе и доступност у Градској библиотеци 'Атанасије Стојковић' Рума.",
         "inLanguage": "sr-Cyrl",
         "publisher": {

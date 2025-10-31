@@ -21,13 +21,13 @@ const Adult =()=>{
           name="description"
           content="Највеће одељење у Градској библиотеци Рума са 38.000 књига и културним програмима."
         />
-        <link rel="canonical" href="https://www.bibliotekaruma.rs/одељење-за-одрасле" />
+        <link rel="canonical" href="https://www.bibliotekaruma.rs/odeljenje-za-odrasle" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Library",
             "name": "Градска библиотека „Атанасије Стојковић" Рума",
-            "url": "https://www.bibliotekaruma.rs/одељење-за-одрасле",
+            "url": "https://www.bibliotekaruma.rs/odeljenje-za-odrasle",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Главна 114",
