@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo, Suspense } from 'react';
 import './Home.css';
-import { Button, Col, Container, Row, Nav, Modal } from 'react-bootstrap';
+import { Button, Col, Container, Row, Modal } from 'react-bootstrap';
 import ImageModal from './ImageModal';
 import cobbis from '../images/cobbis.webp';
 import matica from '../images/matica.webp';
@@ -23,25 +23,21 @@ import karoselSlika from '../images/karoselSlika.webp';
 import digitalna from '../images/digitalna.webp';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedCard from './Department/AnimatedCard'; 
-import psihijatri from '../images/psihijatri.webp';
+
 import pokrajina from '../images/pokrajina.webp';
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import dani1 from '../images/dani1.webp';
-import dani2 from '../images/dani2.webp';
-import dani3 from '../images/dani3.webp';
-import dani4 from '../images/dani4.webp';
-import smrtniIshod from '../images/smrtniIshod.webp';
+
+
 import predavanjeVizeti from '../images/predavanjeVizeti.webp';
 import poetskoVece from '../images/poetskoVece.webp';
- import pesmaOTriSveta from '../images/pesmaOTriSveta.webp'
-import karizi from '../images/karizi.webp';
 import konkursAtanasije from '../images/konkursAtanasije.webp';
 import romana from '../images/романа.webp';
 import promocija from '../images/ПРОМОЦИЈА.webp';
 import sanjalica from '../images/sanjalica.webp';
 import todor from '../images/todor.webp';
-import muso from '../images/muso.webp';
+
+import milan from '../images/milan.webp';
  
  
 
@@ -51,14 +47,6 @@ const AnimatedImage = React.lazy(() => import('./Department/AnimatedImage'));
 
 const Home =()=> { 
   const [date, setDate] = useState(new Date());
-  const [activeKey, setActiveKey] = useState(() => {
-    const currentMonthIndex = new Date().getMonth();
-    if (currentMonthIndex === 9) return 'oktobar';
-    if (currentMonthIndex === 7) return 'avgust';
-    if (currentMonthIndex === 6) return 'jul';
-    if (currentMonthIndex === 5) return 'jun';
-    return 'oktobar';
-  });
   const markedDates = useMemo(() => [
     new Date(new Date().getFullYear(), 6, 22), // 22. jul
     new Date(new Date().getFullYear(), 6, 24), // 24. jul
@@ -66,6 +54,7 @@ const Home =()=> {
     new Date(new Date().getFullYear(), 6, 30), // 30. jul
     new Date(new Date().getFullYear(), 7, 22), // 22. avgust
     new Date(new Date().getFullYear(), 7, 25), // 25. avgust
+    new Date(new Date().getFullYear(), 9, 29), // 29. oktobar
   ], []);
 
   const [showFriends, setShowFriends] = useState(false);
@@ -158,15 +147,32 @@ const Home =()=> {
     ) {
       setModalImage(sanjalica);
       setShowImage(true);
+    } else if (
+      date instanceof Date &&
+      date.getDate() === 29 &&
+      date.getMonth() === 9 && // oktobar je 9
+      date.getFullYear() === new Date().getFullYear()
+    ) {
+      setModalImage(milan);
+      setShowImage(true);
+       } else if (
+      date instanceof Date &&
+      date.getDate() === 25 &&
+      date.getMonth() === 7 &&
+      date.getFullYear() === new Date().getFullYear()
+    ) {
+      setModalImage(sanjalica);
+      setShowImage(true);
     } else {
       setShowImage(false);
     }
   }, []);
 
   const imageSets = useMemo(() => [
-    [sanjalica, todor],
-    [romana, promocija],
-    [predavanjeVizeti, poetskoVece]
+    [milan, sanjalica],
+    [todor, romana],
+    [promocija, predavanjeVizeti],
+    [poetskoVece, books]
   ], []);
   
   const toggleImageSet = () => {
@@ -363,8 +369,6 @@ const Home =()=> {
 
 </Row>
 
-
-
 <Container  className=" container-library ms-auto mt-4 mb-4 ">
  
 <h2 className= "container-title"  >ОГЛАСНА ТАБЛА</h2>
@@ -448,149 +452,56 @@ const Home =()=> {
   </Row>
 </Container>
 
- <Container className='container-library mt-2 mb-2'>
-   <h2 className="container-title mb-2">Препорука романа за месец</h2><hr/>
-   <Row>
-     <Col md={3}>
-       <Nav variant="pills" className="flex-column" activeKey={activeKey} onSelect={setActiveKey}>
-         <Nav.Item>
-           <Nav.Link eventKey="jun" className="container-text">Јун</Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-           <Nav.Link eventKey="jul" className="container-text">Јул</Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
-           <Nav.Link eventKey="avgust" className="container-text">Август</Nav.Link>
-         </Nav.Item>
-           <Nav.Item>
-           <Nav.Link eventKey="septembar" className="container-text">Септембар</Nav.Link>
-         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link eventKey="oktobar" className="container-text">Октобар</Nav.Link>
-        </Nav.Item>
-       </Nav>
-     </Col>
-     <Col md={9}>
-       {activeKey === 'jun' && (
-          <Row>
-            <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4">
-              <AnimatedImage className="container-image" alt='Смртни исход атлетских повреда' src={smrtniIshod} />
-              <br/><br/>
-              
-              <Button
-                variant="secondary"
-                href="https://plus.cobiss.net/cobiss/sr/sr/bib/gbru/59516681"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Прегледај остала дела Милице Вучковић"
-                style={{marginTop: '0.5rem'}}
-              >
-                Oстала дела ове ауторке
-              </Button>
-            </Col>
-            <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
-              <p className="container-text">Ако сте у потрази за књигом која ће вам оставити дубок траг и натерати вас на разматрање људских односа, бола и патње, овог месеца вам препоручујемо <em>„Смртни исход атлетских повреда“</em> Милице Вучковић.</p>
-    <hr/>  <a href="https://booka.rs/knjige/savremena-knjizevnost/smrtni-ishod-atletskih-povreda/" 
-   target="_blank" 
-   rel="noopener noreferrer">
-   Детаљније о роману
-</a>
+  <Container className='container-library ms-auto mt-4 mb-4'>
+    <Row>
+      <Col md={12}>
+        <h2 className='container-title'> Трећи Дани Атанасија Стојковића</h2><hr/>
+        <p className='container-text'>
+          У Градској библиотеци „Атанасије Стојковић” обележавају се Дани Атанасија Стојковића, трећу годину заредом,
+          као омаж великом научнику, филозофу и писцу чије име библиотека с поносом носи. Окосница овог обележавања
+          јесте датум његовог рођења – 20. септембар 1773. године, од кога је протекло 252 године.
+          <br/><br/>
+          <strong >Предавања одржана ове године:</strong>
+          <br/>
+         - Проф. др Исидора Бјелаковић: „Представљање фототипског издања Новог завета по преводу Атанасија Стојковића“.
+          <br/>
+         - Проф. др Растислав Стојсављевић: „Географске тајне у делима Атанасија Стојковића“.
+          <br/>
+         - Проф. др Радослав Ераковић: „Биографија као роман: живот и прикљученија Атанасија Стојковића“.
+          <br/>
+         - Михајло Морача: „Преводи Новог завета - Атанасије Стојковић“.
+        </p>    
+        <hr/><br/>
+            <p className='container-text' style={{marginTop: '1rem'}}>
+          Завршницу овогодишњих, трећих Дана Атанасија Стојковића, обележила је пројекција документарног филма
+          „У чије име говориш Вуче: сукоб Атанасија Стојковића и Вука Стефановића Караџића“, ауторке Јелене Видаковић.
+        </p>
+        <div className='container-iframe'>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/J-f1BCsa3SM"
+            title="Дани Атанасија Стојковића"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        </div>
 
-
-            </Col>
-          </Row>
-       )}
-       {activeKey === 'jul' && (
-        <Row>
-            <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4"> 
-  <AnimatedImage className="container-image" alt='књиге' src={psihijatri} />
-             <br/><br/>
-             <Button
-      variant="secondary" 
-      href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?q=munjos+avia*&db=gbru&mat=allmaterials" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      aria-label="Прегледај остала дела Родрига Муњоса Авие"
-    >
-      Oстала дела овог аутора 
-    </Button>
-  </Col>    
-  <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
-             <p className="container-text">
-               Роман „Психијатри, психолози и други болесници“ Родрига Муњоса Авие је духовита и иронична прича која ће вас у исто време насмејати и растужити. Кроз занимљив, једноставан, али снажан наратив провлачи се лајтмотив овог романа, а то је страх од смрти – универзално осећање које не познаје разлике у занимању, образовању, ни у друштвеном статусу.
-    </p>
-    <hr/>
-    „Онда, не знам зашто, али тако ми је дошло — почео сам ненормално да се смејем, тако дубоко и дуго да је тај смех одзвањао све до краја нашег насеља... Потапшао сам психијатра по леђима и вратио се у нашу кућу не престајући да се смејем.“
-  </Col>
-  </Row>
-       )}
-       {activeKey === 'avgust' && (
-         <Row>
-           <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4">
-             <AnimatedImage className="container-image" alt='Жена са цветом од папира' src={karizi} />
-           </Col>
-           <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
-             <p className="container-text">„Жена са цветом од папира“, кратки али веома слојевити роман Доната Каризија, једног од најпознатијих савремених италијанских писаца, представља интроспективно и мистично дело смештено у оквир Првог светског рата. Ово није ратна прича у класичном смислу — нема фронта, крви и битки, већ дубока, готово интимна исповест о људским душама које су повезане у времену.<br/><br/>Ово је први роман који је написао чувени Каризи, после њега он пише психолошке трилере који су му донели светску славу.</p>
-             <Button
-               variant="secondary"
-               href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?q=donato+karizi*&db=gbru&mat=allmaterials"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Прегледај остала дела Доната Каризија"
-               style={{marginTop: '0.5rem'}}
-             >
-               Oстала дела овог аутора
-             </Button>
-           </Col>
-         </Row>
-      
-              )}
-      {activeKey === 'oktobar' && (
-        <Row>
-          <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4">
-            <AnimatedImage style={{width:'80%'}}noContainerClass alt='Октобарска препорука' src={muso} />
-          </Col>
-          <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
-            <p className="container-text">Препорука за октобар:<br/>
-Ако тражите узбудљиво и незаборавно читање за овај месец, препоручујемо роман Гијома Мусоа. Ово је љубавни роман са елементима трилера и детективске приче, прожет фантастиком, који оставља дубок траг у души читаоца. Књига показује да је, у животу као и у причи, све могуће.</p>
-            <Button
-              variant="secondary"
-              href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?q=guillaume+musso*&db=gbru&mat=allmaterials"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Прегледај остала дела овог аутора у нашој библиотеци"
-              style={{marginTop: '0.5rem'}}
-            >
-              Остала дела овог аутора
-            </Button>
-          </Col>
-        </Row>
-      )}
-       {activeKey === 'septembar' && (
-         <Row>
-           <Col xs={12} sm={12} md={4} lg={4} xl={4} className=" text-center mt-4">
-             <AnimatedImage className="container-image" alt='Песма о три света' src={pesmaOTriSveta} />
-           </Col>
-           <Col xs={12} sm={12} md={8} lg={8} xl={8} className="mt-4">
-             <p className="container-text">
-Владимир Пиштало у роману „Песма о три света“ оживљава једну од оних заборављених, али дубоко узбудљивих прича из прошлости Боке Которске. Радња романа прати судбину девојке из Пераста, коју су 1624. године отели гусари. Овај догађај постаје полазиште за приповест која премашује обичан историјски запис – Пиштало у њој гради симболичку причу о три света који се сударају: медитерански, оријентални и хришћански.
- <br/></p>
-             <Button
-               variant="secondary"
-               href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?q=vladimir+pistalo*&db=gbru&mat=allmaterials"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Прегледај остала дела Владимира Пиштала"
-               style={{marginTop: '0.5rem'}}
-             >
-               Oстала дела овог аутора
-             </Button>
-           </Col>
-         </Row>
-       )}
-     </Col>
-   </Row>
+      </Col>
+    </Row>
   </Container>
+
+ <Container className='container-library mt-2 mb-2'>
+   <h2 className="container-title mb-3">Препорука месеца</h2>
+   <p className="container-text">Погледајте актуелну препоруку и остале предлоге библиотекара.</p>
+   <Button
+     variant="secondary"
+     href="/preporuke-bibliotekara"
+     aria-label="Погледај све препоруке библиотекара"
+   >
+     Препоруке библиотекара
+   </Button>
+ </Container>
   
   
         <Container className='container-library ms-auto mt-4 mb-4'>

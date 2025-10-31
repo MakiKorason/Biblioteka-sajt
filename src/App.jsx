@@ -139,6 +139,7 @@ function InnerApp() {
         </Navbar>
       </header>
 
+      <main role="main" id="main-content">
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path='/' element={<AnimatedPage><Home /></AnimatedPage>} />
@@ -182,6 +183,7 @@ function InnerApp() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
+      </main>
 
       <footer className="library-footer">
         <Container>
