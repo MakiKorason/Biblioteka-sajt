@@ -23,15 +23,11 @@ import karoselSlika from '../images/karoselSlika.webp';
 import digitalna from '../images/digitalna.webp';
 import 'react-calendar/dist/Calendar.css';
 import AnimatedCard from './Department/AnimatedCard'; 
-
 import pokrajina from '../images/pokrajina.webp';
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 import poetskoVece from '../images/poetskoVece.webp';
 import konkursAtanasije from '../images/konkursAtanasije.webp';
-
-
 import sanjalica from '../images/sanjalica.webp';
 import todor from '../images/todor.webp';
 import mirko from '../images/mirko.webp';
@@ -463,25 +459,12 @@ const Home =()=> {
       </Col>
     </Row>
   </Container>
-
- <Container className='container-library mt-2 mb-2'>
-   <h2 className="container-title mb-3">Препорука месеца</h2>
-   <p className="container-text">Погледајте актуелну препоруку и остале предлоге библиотекара.</p>
-   <Button
-     variant="secondary"
-     href="/preporuke-bibliotekara"
-     aria-label="Погледај све препоруке библиотекара"
-   >
-     Препоруке библиотекара
-   </Button>
- </Container>
-  
   
         <Container className='container-library ms-auto mt-4 mb-4'>
          <Row className='text-center'>
          <Col md={4} className='mt-4'>     
          <AnimatedCard>
-        <a href="https://plus.cobiss.net/cobiss/sr/sr/bib/search?db=gbru" target="_blank" rel="noopener noreferrer">
+        <a href="https://plus.cobiss.net/cobiss/sr/sr/search/cobib?lib=gbru" target="_blank" rel="noopener noreferrer">
         <p className='container-title'>Претражите<br/> наш фонд  </p> </a><img 
       src={cobbis}
       alt="COBISS" 

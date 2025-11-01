@@ -85,7 +85,7 @@ Bibliographic System and Services).
 <AnimatedCard className="cobiss-card">
             <Card.Body>
               <Card.Text>
-                <p className="container-text"><a href='https://plus.cobiss.net/cobiss/sr/sr/bib/search' rel="noopener noreferrer"   target="_blank" alt='линк ка MCOBISS'>COBISS+</a>
+                <p className="container-text"><a href='https://plus.cobiss.net/cobiss/sr/sr/search/cobib?lib=gbru' rel="noopener noreferrer"   target="_blank" alt='линк ка MCOBISS'>COBISS+</a>
 <br/>•	Web апликација која библиотекарима и
 корисницима омогућава приступ претраживању
 различитих база података (апликација је
